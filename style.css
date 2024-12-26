@@ -1,0 +1,69 @@
+
+
+/* 
+    1- Position مركز العنصر
+        - position: static; ده الوضع الافتراضي لكل العناصر
+        - position: absolute; ان العنصر بيتحرك بناءً علي الصفحة
+        - position: relative; العنصر يتحرك بناءً علي نفسو
+        - position: fixed; تثبيت العنصر في موضع معين في الصفحة
+        - position: sticky; 
+
+
+    2- Display
+
+        - display: block;
+            1- العنصر ده مش بياخد حاجة جمبو
+            2- بيستجيب للطول و العرض
+            3- يتفاعل مع البادنج و المارجن
+                    display: block;
+                    background-color: red;
+                    width: 100px;
+                    height: 100px;
+                    margin: 3px;
+                    padding: 100px;
+
+        - inline
+            1- العنصر ده مش بياخد عناصر جمبو علي نفس الخط
+            2- مش بيتفاعل للطول و العرض
+            3- مقيد مع البادنج و المارجن
+
+        - inline-block
+        - display: none; بيحذف العنصر من الصفحة بالكامل
+        - visibility: hidden; حذف العنصر من الصفحة مع البقاء علي مكانه
+
+
+*/
+
+
+
+
+@media(max-width:1600px){
+    body{
+        background-color: red;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+
+@media(max-width:800px){
+    body{
+        background-color: green;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:500px){
+    body{
+        background-color: blue;
+    }
+    h1{
+        font-size: 40px;
+        display: none;
+    }
+}
+
